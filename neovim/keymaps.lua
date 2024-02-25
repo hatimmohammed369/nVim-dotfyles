@@ -24,8 +24,8 @@ vim.keymap.set('n', '<C-d>', "<C-d>zz")
 vim.keymap.set('n', '<C-u>', "<C-u>zz")
 
 -- Find next search and keep cursor in the middle of the screen
-vim.keymap.set('n', 'n', "nzzzv")
-vim.keymap.set('n', 'N', "nzzzv")
+--vim.keymap.set('n', 'n', "nzzzv")
+--vim.keymap.set('n', 'N', "nzzzv")
 
 -- Replace visual block without yanking it (not Neovim default)
 vim.keymap.set('x', '<leader>p', "\"_dP")
@@ -87,7 +87,7 @@ end
 )
 
 -- Make N blank lines below current line and move to top created blank line
-vim.keymap.set('n', '<leader><leader>j', function()
+vim.keymap.set('n', '<leader>nj', function()
     local current_line = vim.fn['line']('.')
     local count = vim.v.count1;
     for k = 1, count do
@@ -99,7 +99,7 @@ end
 
 -- Make N blank lines above current line
 vim.keymap.set('n', '<leader>k', function()
-    local current_line = vim.fn['line']('.')-1
+    local current_line = vim.fn['line']('.') - 1
     local count = vim.v.count1;
     for k = 1, count do
         vim.call('append', current_line, '')
@@ -108,8 +108,8 @@ end
 )
 
 -- Make N blank lines above current line and move to bottom created blank line
-vim.keymap.set('n', '<leader><leader>k', function()
-    local current_line = vim.fn['line']('.')-1
+vim.keymap.set('n', '<leader>nk', function()
+    local current_line = vim.fn['line']('.') - 1
     local count = vim.v.count1;
     for k = 1, count do
         vim.fn['append'](current_line, '')

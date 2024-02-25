@@ -1,3 +1,5 @@
+vim.cmd.colorscheme('peachpuff')
+
 -- Disable <SPACE> key
 vim.keymap.set('n', '<SPACE>', '<Nop>')
 
