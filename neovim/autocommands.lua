@@ -1,6 +1,13 @@
-vim.api.nvim_create_autocmd( {"BufEnter", "BufWinEnter"}, {
+vim.api.nvim_create_autocmd( { "WinEnter" }, {
     callback = function()
-	-- Show line numbers and use relative line numbers
+        -- Use <C-c> as <Escape>
+        vim.cmd(':map <C-c> <Esc>')
+    end
+})
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+    callback = function()
+        -- Show line numbers and use relative line numbers
         vim.opt_local.number = true
         vim.opt_local.relativenumber = true
     end
