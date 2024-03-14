@@ -60,4 +60,4 @@ vim.g.showcmd = true
 vim.cmd('hi CursorLineNr term=bold cterm=bold ctermfg=Black ctermbg=Red')
 vim.cmd('hi CursorLine term=none cterm=none ctermbg=LightGrey')
 vim.cmd('hi Visual ctermbg=LightBlue')
-vim.cmd('hi MatchParen term=none cterm=none ctermbg=White ctermfg=Black')
+vim.cmd('hi clear MatchParen')
