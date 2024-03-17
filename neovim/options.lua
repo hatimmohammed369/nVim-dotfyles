@@ -8,16 +8,16 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Indent smartly
-vim.opt.autoindent = true
-vim.opt.cindent = true
-vim.opt.smartindent = true
+vim.cmd('set cindent')
+vim.cmd('set autoindent')
+vim.cmd('set smartindent')
 
 -- Use Python-style indenting
-vim.opt.tabstop=4
-vim.opt.shiftwidth=4
-vim.opt.softtabstop=4
-vim.opt.expandtab = true
-vim.opt.shiftround = true
+vim.cmd('set tabstop=4')
+vim.cmd('set shiftwidth=4')
+vim.cmd('set softtabstop=4')
+vim.cmd('set expandtab')
+vim.cmd('set shiftround')
 
 -- While scrolling alway leave 10 lines of current screen
 vim.opt.scrolloff = 10
