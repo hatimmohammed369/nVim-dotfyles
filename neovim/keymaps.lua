@@ -59,13 +59,13 @@ vim.keymap.set('i', '<C-s>', '<C-d>', { silent = true })
 
 -- Explore current directory
 -- replace buffer file with directory buffer
-vim.keymap.set('n', '<leader>x', ':Ex<CR>')
+vim.keymap.set('n', '<leader>x', vim.cmd.Ex)
 
 -- Explore in a vertical split
-vim.keymap.set('n', '<leader>vx', ':Vex<CR>')
+vim.keymap.set('n', '<leader>vx', vim.cmd.Vex)
 
 -- Explore in horizental split
-vim.keymap.set('n', '<leader>hx', ':Hex<CR>')
+vim.keymap.set('n', '<leader>hx', vim.cmd.Hex)
 
 -- Source current buffer
 vim.keymap.set('n', '<leader>so', ':w | so<CR>')

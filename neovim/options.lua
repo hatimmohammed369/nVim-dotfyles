@@ -8,7 +8,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Indent smartly
-vim.cmd('set cindent')
+vim.cmd('set nocindent')
 vim.cmd('set autoindent')
 vim.cmd('set smartindent')
 
@@ -18,9 +18,6 @@ vim.cmd('set shiftwidth=4')
 vim.cmd('set softtabstop=4')
 vim.cmd('set expandtab')
 vim.cmd('set shiftround')
-
--- While scrolling alway leave 10 lines of current screen
-vim.opt.scrolloff = 10
 
 -- Highlight line containing cursor
 vim.opt.cursorline = true
