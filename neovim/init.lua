@@ -12,6 +12,7 @@ vim.opt.compatible = false
 
 -- Enable plugin Termdebug
 vim.cmd('packadd termdebug')
+vim.cmd [[ :tnoremap <Esc> <C-\><C-n> ]]
 
 -- Store swaps
 vim.opt.dir = "/home/hatim/.config/nvim/swap"
